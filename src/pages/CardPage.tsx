@@ -46,7 +46,7 @@ export default function CardPage() {
 				</div>
 				<div className="card-page__container">
 					<div className="card-page__blue-bg"></div>
-					<img src="/images/card-image.svg" alt="" className="card-page__image" />
+					<img src="/images/card-image.png" alt="" className="card-page__image" />
 				</div>
 			</div>
 		</>
