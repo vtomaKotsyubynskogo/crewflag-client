@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 430px) {
+      width: 90%;
+    }
+  }
+
+  &__logo {
+    //margin-top: 10px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__search-input {
+    width: 100px;
+
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
+  }
+
+  //&__account{
+  //  display: flex;
+  //  align-items: center;
+  //  gap: 5px;
+  //  text-decoration: none;
+  //  cursor: pointer;
+  //}
+}
+
+.username{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: end;
+
+  &__title{
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: right;
+    vertical-align: middle;
+    color: #000000;
+  }
+}
+
+.main {
+  width: 100%;
+  background: rgba(24, 37, 78, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+}

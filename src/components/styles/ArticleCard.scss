@@ -1,0 +1,188 @@
+.article-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 304px;
+  justify-content: space-between;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: rgba(9, 9, 16, 0.06);
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 14px 0 #00000033;
+    border-radius: 20px;
+    padding: 17px 24px;
+    position: relative;
+  }
+
+  &-wide {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between;
+    //background-color: #BFCADF;
+    padding: 24px 0;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: rgba(9, 9, 16, 0.06);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .article-text-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 53%;
+    }
+  }
+
+  .article-card-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: 21px;
+    width: 72px;
+    height: 25px;
+    background-color: #E5FFE6;
+    color: #289C6B;
+    border-radius: 5px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+
+  }
+
+  .article-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+
+    .article-card-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: -0.03em;
+      color: #1C1B1F;
+
+      @media (max-width: 768px) {
+        width: 70%;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -3%;
+        color: #1C1B1F;
+        padding-bottom: 7px;
+      }
+    }
+
+    .article-card-description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1C1B1F;
+      opacity: 0.5;
+    }
+
+    .article-card-date-and-views {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 0.4;
+
+
+      .article-card-date-time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+
+        .date-time {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #1C1B1F;
+        }
+      }
+      .article-card-mins{
+        display: none;
+
+        @media (max-width: 768px) {
+          display: flex;
+          align-items: center;
+          font-family: Inter, sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #1C1B1F;
+        }
+      }
+      .article-card-views{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+
+        .visibility-icon{
+          width: 24px;
+        }
+      }
+      .views-value{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #1C1B1F;
+      }
+      .article-card-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .article-card-category-relevant{
+    color: #EC1C24;
+    background-color: #FFF0F1;
+  }
+  .article-card-category-health{
+    color: #289C6B;
+    background-color: #E5FFE6;
+  }
+  .article-card-category-vacancies{
+    color: #9735BB;
+    background-color: #F8E5FF;
+  }
+  .article-card-category-industry{
+    color: #1CBAEC;
+    background-color: #E5F9FF;
+  }
+  .article-card-category-travels{
+    color: #0066FF;
+    background-color: #C2EAFF;
+  }
+}
+
+

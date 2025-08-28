@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 45px;
+  background-color: #EEEEEE;
+  position: relative;
+  z-index: 5;
+
+  &__wrapper {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0 7px 0;
+
+
+    @media (max-width: 430px) {
+      width: 94%;
+    }
+  }
+
+  &__logo {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  &__logo-image{
+    width: 31px;
+    height: 24px;
+  }
+  &__logo-title{
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #000000;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__user-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #18254E;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+  }
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  align-items: end;
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: right;
+    vertical-align: middle;
+    color: #000000;
+  }
+
+}
+
+.default-layout-main {
+  width: 100%;
+  height: fit-content;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 55px;
+//
+//  @media (max-height: 740px) {
+//    height: 100vh;
+//  }
+//
+//  @media (max-height: 667px) {
+//    height: 111vh;
+//  }
+}

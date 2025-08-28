@@ -1,0 +1,23 @@
+.category-list-button {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  padding: 0 16px;
+  height: 32px;
+  border-radius: 16px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #18254E;
+  color: #18254E;
+
+  &.active {
+    border: none;
+    color: #FFFFFF;
+    background-color: #18254E;
+  }
+}

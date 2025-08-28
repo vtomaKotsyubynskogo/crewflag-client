@@ -1,0 +1,31 @@
+.blue-sphere {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 347px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #E6F3F3 0%, #77ECF3 30%, #40B1EB 60%, #0043B8 100%);
+  z-index: 0;
+  filter: blur(20px);
+  pointer-events: none;
+
+  /* керуємо трансформаціями через змінні */
+  --tx: 0px;
+  --ty: 0px;
+  --scale: 1;
+
+  transform: translate(var(--tx), var(--ty)) scale(var(--scale));
+  will-change: transform;
+
+  //animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    --scale: 1;
+  }
+  50% {
+    --scale: 1.15;
+  }
+}

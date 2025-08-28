@@ -1,0 +1,131 @@
+.profile-data {
+  width: 95%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 14px;
+  padding-top: 14px;
+  border-radius: 4px;
+  padding-bottom: 95px;
+
+  &__title-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #FEF9F6;
+    padding: 5px 11px;
+  }
+  &__title-text-block{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--active {
+    color: #fff;
+    background: #18254E;
+  }
+
+
+  &__wrapper {
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+  }
+
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #18254E;
+  }
+
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    width: 100%;
+    background: rgba(24, 37, 78, 0.08);
+    color: rgba(24, 37, 78, 1);
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+
+    //&::placeholder {
+    //  color: rgba(28, 27, 31, 0.5);
+    //}
+
+  }
+  &__item--error{
+    background-color: rgba(236, 28, 36, 0.3);
+  }
+
+  &____submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    color: rgba(28, 27, 31, 1);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &--active {
+      background-color: #18254E;
+      color: #fff;
+    }
+
+    &--pending {
+      background-color: #3c4f8c!important;
+    }
+  }
+  &__item--error {
+    background-color: rgba(236, 28, 36, 0.3);
+  }
+}
+
+input {
+  border: 1px solid #18254e;
+  padding: 10px;
+  border-radius: 6px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: #18254e;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(36, 61, 143, 0.3);
+}

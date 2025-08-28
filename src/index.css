@@ -1,0 +1,21 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  /*background-color: #EEEEEE;*/
+  background-color: #FFFFFF;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}

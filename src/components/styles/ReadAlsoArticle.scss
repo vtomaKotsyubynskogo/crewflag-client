@@ -1,0 +1,39 @@
+.read-also{
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+
+  &__img{
+    width: 85px;
+  }
+  &__text-block{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__title{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #1C1B1F;
+  }
+  &__views-comments{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    color: #909090;
+  }
+  &__views-icon{
+    width: 24px;
+  }
+  &__comments-icon{
+    width: 16px;
+  }
+  &__views, &__comments{
+    display: flex;
+    gap: 6px;
+  }
+}

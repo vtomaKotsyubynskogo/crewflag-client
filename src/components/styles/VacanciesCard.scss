@@ -1,0 +1,186 @@
+.card-container{
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  background-color: #F5F7FD;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 18px;
+  text-decoration: none;
+
+  @media (max-width: 1600px) {
+    width: 32%;
+  }
+
+  @media (max-width: 1370px) {
+    //width: 420px;
+    width: 32%;
+  }
+
+  @media (max-width: 1280px) {
+    //width: 441px;
+    width: 49%;
+
+  }
+
+  @media (max-width: 1152px) {
+    //width: 460px;
+  }
+
+  @media (max-width: 1024px) {
+    //width: 480px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 760px;
+    border-radius: 20px;
+    background-color: rgba(245, 247, 253, 0.7);
+    padding: 17px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+
+    box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.2);
+
+  }
+
+  .arrow-icon{
+
+    display: none;
+
+    @media (max-width: 768px) {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      bottom: 15px;
+      right: 21px;
+      display: flex;
+      align-self: flex-end;
+    }
+
+
+  }
+
+  .card-header{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.03em;
+    color: #1C1B1F;
+
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 768px) {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: -3%;
+
+    }
+  }
+  .card-date-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .landing-date-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 25px;
+    }
+
+  }
+  .contract-length-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+  }
+  .card-dates{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C1B1F;
+    opacity: 0.5;
+
+    @media (max-width: 768px) {
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+    }
+  }
+  .landing-date{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C1B1F;
+
+    @media (max-width: 768px) {
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+
+    }
+  }
+  .card-salary{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
+    color: #1C1B1F;
+
+    @media (max-width: 1280px) {
+      font-size: 23px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 100%;
+      letter-spacing: -3%;
+    }
+  }
+  .company{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+
+    .company-title{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1C1B1F;
+    }
+  }
+}
+

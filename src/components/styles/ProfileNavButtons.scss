@@ -1,0 +1,49 @@
+.profile-nav-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  &__item{
+    width: 113px;
+    height: 32px;
+    border-radius: 16px;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #18254E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__item-active{
+    background: #18254E;
+    color: #D1D3DC;
+    width: 113px;
+    height: 32px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #18254E;
+  }
+
+  &__title-active{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #D1D3DC;
+  }
+}

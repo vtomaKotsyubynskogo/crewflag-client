@@ -1,0 +1,47 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"files": {
+		"ignore": [
+			"dist/**",
+			"node_modules/**",
+			".idea/**",
+			".vscode/**",
+			".DS_Store"
+		],
+		"include": ["src/**"]
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"useKeyWithClickEvents": "off",
+				"useKeyWithMouseEvents": "off",
+				"useButtonType": "off",
+				"noSvgWithoutTitle": "off"
+			},
+			"complexity": {
+				"noUselessTernary": "off"
+			},
+			"style": {
+				"useSelfClosingElements": "off",
+				"noUnusedTemplateLiteral": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noThenProperty": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 4,
+		"lineEnding": "crlf"
+	}
+}

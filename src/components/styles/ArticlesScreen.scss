@@ -1,0 +1,129 @@
+.articles-screen-container {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .articles-screen-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 14px;
+    gap: 20px;
+    background: #EEF3FB;
+    border-radius: 4px;
+    position: absolute;
+    width: 222px;
+    left: 104px;
+    top: 109px;
+
+    .categories-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: -0.03em;
+      color: #1C1B1F;
+    }
+
+    .categories-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+
+      .category-name {
+        text-align: center;
+        padding: 11px 12px;
+        border: 1px solid #18254E;
+        border-radius: 80px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(24, 37, 78, 0.8);
+
+      }
+
+      .category-name-active {
+        text-align: center;
+        padding: 11px 12px;
+        background: #18254E;
+        border-radius: 80px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+    }
+  }
+
+  .articles-cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 56px;
+    width: 46%;
+
+    .articles-screen-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 112%;
+      letter-spacing: -0.04em;
+      color: #1C1B1F;
+
+    }
+
+    .articles-first-card {
+      //display: flex;
+      //flex-direction: row;
+      //gap: 60px;
+      //justify-content: space-between;
+      //background-color: #BFCADF;
+      //padding: 24px 0;
+      //border-width: 1px 0;
+      //border-style: solid;
+      //border-color: rgba(9, 9, 16, 0.06);
+    }
+
+    .others-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+      width: 100%;
+    }
+    .more-articles{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 20px;
+      margin-top: 16px;
+      gap: 8px;
+      width: 166px;
+      height: 40px;
+      background: rgba(0, 59, 255, 0.12);
+      border-radius: 4px;
+      border: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #18254E;
+    }
+
+  }
+
+}
+
+
+
+
+
+

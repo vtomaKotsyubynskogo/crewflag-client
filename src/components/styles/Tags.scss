@@ -1,0 +1,41 @@
+.tags-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 302px;
+  height: 138px;
+  background: rgba(10, 25, 43, 0.04);
+  backdrop-filter: blur(37px);
+
+  .tags-number{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #1C1B1F;
+    opacity: 0.5;
+  }
+  .tags-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    color: #18254E;
+
+  }
+  .tags-icons{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4px;
+  }
+}
