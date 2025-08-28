@@ -7,7 +7,6 @@ import {
 	useState,
 	createContext,
 	useContext,
-	ReactNode,
 } from "react";
 
 interface Notification {

@@ -20,7 +20,6 @@ import ProfileData from "./components/ProfileData.tsx";
 import ProfileSecurity from "./components/ProfileSecurity.tsx";
 import ProfileEmailEdit from "./components/ProfileEmailEdit.tsx";
 import ProfilePasswordEdit from "./components/ProfilePasswordEdit.tsx";
-import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -135,6 +134,5 @@ const router = createBrowserRouter([
 export default function AppRouter() {
 	return <>
 		<RouterProvider router={router} />
-		{/*<ScrollToTop />*/}
 	</>
 }

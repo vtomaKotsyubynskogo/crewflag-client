@@ -1,5 +1,5 @@
 import "./Select.scss";
-import { useEffect, useRef, useState } from "react";
+import {type RefObject, useEffect, useRef, useState} from "react";
 import { COUNTRIES } from "./countries.tsx";
 import type { SelectMenuOption } from "./types";
 import cn from "classnames";
@@ -31,7 +31,7 @@ export default function CountrySelector({
 	onChange,
 	defaultValue,
 	placeholder,
-	searchPlaceholder,
+	// searchPlaceholder,
 	data = [],
 	className,
 }: CountrySelectorProps) {
@@ -64,7 +64,7 @@ export default function CountrySelector({
 		}
 	}, []);
 
-	useOnClickOutside(containerRef, () => {
+	useOnClickOutside(containerRef as RefObject<HTMLDivElement>, () => {
 		if (open) {
 			onToggle();
 			setQuery("");

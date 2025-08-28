@@ -1,6 +1,6 @@
 import "./styles/ArticlesScreen.scss";
 import { useState } from "react";
-import ArticleCard from "./АrticleCard.tsx";
+import ArticleCard, {type ArticleCardCategory} from "./АrticleCard.tsx";
 
 const tabs = [
 	{
@@ -100,11 +100,12 @@ export default function ArticlesScreen() {
 					<div className="articles-first-card">
 						{firstArticles.map((firstArticle, key) => (
 							<ArticleCard
+								id={'123'}
 								key={key}
 								title={firstArticle.title}
 								description={firstArticle.description}
 								date={firstArticle.date}
-								category={firstArticle.category}
+								category={firstArticle.category as ArticleCardCategory}
 								image={firstArticle.image}
 								views={firstArticle.views}
 								isWide={true}
@@ -114,12 +115,13 @@ export default function ArticlesScreen() {
 					<div className="others-cards">
 						{articles.map((article, key) => (
 							<ArticleCard
+								id={'123'}
 								key={key}
 								title={article.title}
 								description={article.description}
 								date={article.date}
 								views={article.views}
-								category={article.category}
+								category={article.category as ArticleCardCategory}
 							/>
 						))}
 					</div>

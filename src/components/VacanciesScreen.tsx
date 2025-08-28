@@ -61,6 +61,7 @@ export default function VacanciesScreen() {
 						<div className="vacancies-main-container">
 							{vacancies.map((vacancy, key) => (
 								<VacanciesCard
+									id={'123'}
 									key={key}
 									title={vacancy.title}
 									date={vacancy.date}

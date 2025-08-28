@@ -13,7 +13,6 @@ export default function ProfileSecurity() {
 		addNotification("error", "Подтвердите верификацию! <br/> Мы отправили вам письмо на вашу почту");
 	};
 
-
 	return (
 		<>
 			<div className="profile-security">
@@ -53,6 +52,8 @@ export default function ProfileSecurity() {
 
 					</div>
 				</form>
+				<button onClick={handleSuccess}>success</button>
+				<button onClick={handleError}>error</button>
 			</div>
 		</>
 	);
